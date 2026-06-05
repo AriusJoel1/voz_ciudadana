@@ -30,7 +30,7 @@ Permitir que colectivos civiles creen propuestas normativas, reciban comentarios
 Actor: Colectivo ciudadano.
 Flujo: ingresa datos de la propuesta, el sistema genera un identificador, fecha de creación y fecha límite.
 
-![alt text](image-13.png)
+![](image-13.png)
 
 ### CU-02 Registrar firma
 Actor: Ciudadano.

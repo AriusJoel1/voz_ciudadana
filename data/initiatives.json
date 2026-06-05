@@ -1,0 +1,163 @@
+[
+  {
+    "id": "ini_084815bcc213",
+    "title": "EJEMPLO1",
+    "summary": "Ejemplito1\nEjemplito1",
+    "collective": "Ejemplito1",
+    "subject": "Ejemplito1",
+    "created_at": "2026-06-05T14:18:13.985370+00:00",
+    "deadline_at": "2026-06-07T14:18:13.985370+00:00",
+    "signatures": [],
+    "comments": [],
+    "modifications": [],
+    "resources": [],
+    "frozen": false,
+    "frozen_at": null,
+    "frozen_hash": null,
+    "submitted_at": null,
+    "congress_ref": null,
+    "committees": [],
+    "audit_log": [
+      {
+        "event": "create",
+        "at": "2026-06-05T14:18:13.985370+00:00"
+      }
+    ]
+  },
+  {
+    "id": "ini_bebbc8534dfc",
+    "title": "EJEMPLO2",
+    "summary": "Ejemplito2\nEjemplito2",
+    "collective": "Ejemplito2",
+    "subject": "Ejemplito2",
+    "created_at": "2026-06-05T14:18:39.668966+00:00",
+    "deadline_at": "2026-06-11T14:18:39.668966+00:00",
+    "signatures": [
+      {
+        "id": "s_74afa9fbf55b",
+        "citizen_name": "ejempl2",
+        "dni": "72307443",
+        "district": "rimac",
+        "valid": true,
+        "provider_reference": "c1ea82938bc6445e13",
+        "created_at": "2026-06-05T14:19:05.686811+00:00"
+      },
+      {
+        "id": "s_3e2f363fcab9",
+        "citizen_name": "ejempl2",
+        "dni": "11111111",
+        "district": "rimac",
+        "valid": true,
+        "provider_reference": "e2ecc42fdabc7316cd",
+        "created_at": "2026-06-05T14:20:39.675721+00:00"
+      },
+      {
+        "id": "s_0a06972669e5",
+        "citizen_name": "ejempl2",
+        "dni": "12111111",
+        "district": "rimac",
+        "valid": true,
+        "provider_reference": "efcea5f0fedc1af139",
+        "created_at": "2026-06-05T14:20:54.421509+00:00"
+      }
+    ],
+    "comments": [
+      {
+        "id": "c_dcf33bcbdc21",
+        "author": "benja",
+        "body": "hola",
+        "created_at": "2026-06-05T14:19:44.536392+00:00"
+      }
+    ],
+    "modifications": [],
+    "resources": [],
+    "frozen": false,
+    "frozen_at": null,
+    "frozen_hash": null,
+    "submitted_at": null,
+    "congress_ref": null,
+    "committees": [],
+    "audit_log": [
+      {
+        "event": "create",
+        "at": "2026-06-05T14:18:39.668966+00:00"
+      },
+      {
+        "event": "signature",
+        "dni": "72307443",
+        "valid": true,
+        "at": "2026-06-05T14:19:05.686811+00:00"
+      },
+      {
+        "event": "comment",
+        "author": "benja",
+        "at": "2026-06-05T14:19:44.536392+00:00"
+      },
+      {
+        "event": "signature",
+        "dni": "11111111",
+        "valid": true,
+        "at": "2026-06-05T14:20:39.675721+00:00"
+      },
+      {
+        "event": "signature",
+        "dni": "12111111",
+        "valid": true,
+        "at": "2026-06-05T14:20:54.421509+00:00"
+      }
+    ]
+  },
+  {
+    "id": "ini_7dfcdf771248",
+    "title": "Ejemplo 1",
+    "summary": "Como colectivo ciudadano, quiero crear una iniciativa para iniciar la recolección de firmas.",
+    "collective": "ciudadano",
+    "subject": "recolección de firmas",
+    "created_at": "2026-06-05T14:36:47.259442+00:00",
+    "deadline_at": "2026-09-03T14:36:47.259442+00:00",
+    "signatures": [
+      {
+        "id": "s_c9f22b323e43",
+        "citizen_name": "Joel Benjuamin Seminario",
+        "dni": "71021074",
+        "district": "Rimac",
+        "valid": true,
+        "provider_reference": "d79cc41c9da45e2882",
+        "created_at": "2026-06-05T14:37:53.627945+00:00"
+      }
+    ],
+    "comments": [
+      {
+        "id": "c_13a6dbbcd470",
+        "author": "benja",
+        "body": "Este es un ejemplo",
+        "created_at": "2026-06-05T14:37:55.970330+00:00"
+      }
+    ],
+    "modifications": [],
+    "resources": [],
+    "frozen": false,
+    "frozen_at": null,
+    "frozen_hash": null,
+    "submitted_at": null,
+    "congress_ref": null,
+    "committees": [],
+    "audit_log": [
+      {
+        "event": "create",
+        "at": "2026-06-05T14:36:47.259442+00:00"
+      },
+      {
+        "event": "signature",
+        "dni": "71021074",
+        "valid": true,
+        "at": "2026-06-05T14:37:53.627945+00:00"
+      },
+      {
+        "event": "comment",
+        "author": "benja",
+        "at": "2026-06-05T14:37:55.970330+00:00"
+      }
+    ]
+  }
+]

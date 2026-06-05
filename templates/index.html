@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voz del Ciudadano</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Plataforma digital legislativa</p>
+        <h1>Voz del Ciudadano</h1>
+        <p class="lead">Registro de iniciativas legislativas ciudadanas, firmas digitales, comentarios, modificaciones, recursos y congelamiento criptográfico.</p>
+      </div>
+      <div class="badge">25,000 firmas / 90 días</div>
+    </header>
+
+    <section class="grid two">
+      <article class="card">
+        <h2>Crear iniciativa</h2>
+        <form id="initiativeForm" class="form-grid">
+          <input name="title" placeholder="Título" required minlength="3" />
+          <input name="collective" placeholder="Colectivo / organización" required minlength="3" />
+          <input name="subject" placeholder="Materia o tema" required minlength="3" />
+          <textarea name="summary" placeholder="Resumen normativo" required minlength="10"></textarea>
+          <input name="deadline_days" type="number" value="90" min="1" max="90" />
+          <button type="submit">Crear</button>
+        </form>
+        <div id="initiativeCreated" class="result"></div>
+      </article>
+
+      <article class="card">
+        <h2>Buscar iniciativa</h2>
+        <form id="loadForm" class="form-grid">
+          <input name="initiative_id" placeholder="ID de iniciativa" required />
+          <button type="submit">Cargar</button>
+        </form>
+        <pre id="initiativeView" class="codebox">Sin datos cargados.</pre>
+      </article>
+    </section>
+
+    <section class="grid three">
+      <article class="card">
+        <h2>Agregar firma</h2>
+        <form id="signatureForm" class="form-grid">
+          <input name="initiative_id" placeholder="ID de iniciativa" required />
+          <input name="citizen_name" placeholder="Nombre completo" required />
+          <input name="dni" placeholder="DNI (8 dígitos)" required maxlength="8" />
+          <input name="district" placeholder="Distrito" required />
+          <button type="submit">Registrar firma</button>
+        </form>
+      </article>
+
+      <article class="card">
+        <h2>Agregar comentario</h2>
+        <form id="commentForm" class="form-grid">
+          <input name="initiative_id" placeholder="ID de iniciativa" required />
+          <input name="author" placeholder="Autor" required />
+          <textarea name="body" placeholder="Comentario" required></textarea>
+          <button type="submit">Enviar comentario</button>
+        </form>
+      </article>
+
+      <article class="card">
+        <h2>Modificar / Adjuntar recurso</h2>
+        <form id="modForm" class="form-grid compact">
+          <input name="initiative_id" placeholder="ID de iniciativa" required />
+          <input name="author" placeholder="Autor" required />
+          <textarea name="body" placeholder="Modificación propuesta" required></textarea>
+          <button type="submit">Enviar modificación</button>
+        </form>
+        <hr />
+        <form id="resourceForm" class="form-grid compact">
+          <input name="initiative_id" placeholder="ID de iniciativa" required />
+          <input name="name" placeholder="Nombre del recurso" required />
+          <input name="kind" placeholder="Tipo (pdf, acta, etc.)" required />
+          <input name="url" placeholder="URL o referencia" required />
+          <textarea name="notes" placeholder="Notas"></textarea>
+          <button type="submit">Adjuntar recurso</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <h2>Congelar y enviar</h2>
+        <form id="freezeForm" class="form-grid inline">
+          <input name="initiative_id" placeholder="ID de iniciativa" required />
+          <button type="submit">Congelar</button>
+        </form>
+        <form id="submitForm" class="form-grid inline">
+          <input name="initiative_id" placeholder="ID de iniciativa" required />
+          <button type="submit">Enviar al Congreso</button>
+        </form>
+      </article>
+
+      <article class="card">
+        <h2>Estado del sistema</h2>
+        <div id="statusBox" class="status">Listo.</div>
+      </article>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

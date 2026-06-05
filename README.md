@@ -109,7 +109,8 @@ Flujo: luego del congelamiento, remite la iniciativa a la Oficina del Congreso y
 ## Pruebas automatizadas
 
 Cada punto (.) representa una prueba exitosa.
-![alt text](image-12.png)
+
+![](image-12.png)
 
 
 ## Ejecución
